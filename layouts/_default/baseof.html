@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ .Site.Title }}</title>
+  <meta name="description" content="{{ .Site.Params.description }}">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="icon" href="/images/eromlabs-logo.png" type="image/png">
+</head>
+<body>
+  {{ block "main" . }}{{ end }}
+
+  <footer>
+    <div class="container">
+      <p>&copy; {{ now.Year }} {{ .Site.Title }}. All rights reserved.</p>
+      <p class="company-number">Company No. {{ .Site.Params.companyNumber }}</p>
+    </div>
+  </footer>
+</body>
+</html>

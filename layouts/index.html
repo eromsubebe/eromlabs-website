@@ -1,0 +1,48 @@
+{{ define "main" }}
+
+<!-- Hero -->
+<section class="hero">
+  <div class="container">
+    <img src="/images/eromlabs-logo.png" alt="Erom Labs Logo" class="logo">
+    <h1>Erom Labs</h1>
+    <p class="tagline">Cloud + Automation + Integration</p>
+    <p class="summary">{{ .Site.Params.heroSummary }}</p>
+  </div>
+</section>
+
+<!-- Services -->
+<section class="services" id="services">
+  <div class="container">
+    <h2>What We Do</h2>
+    <div class="cards">
+      {{ range .Site.Params.services }}
+      <div class="card">
+        <h3>{{ .title }}</h3>
+        <p>{{ .description }}</p>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+<!-- About -->
+<section class="about" id="about">
+  <div class="container">
+    <h2>About</h2>
+    <p>{{ .Site.Params.about }}</p>
+  </div>
+</section>
+
+<!-- Contact -->
+<section class="contact" id="contact">
+  <div class="container">
+    <h2>Contact</h2>
+    <div class="contact-details">
+      <p><strong>Email:</strong> <a href="mailto:{{ .Site.Params.contactEmail }}">{{ .Site.Params.contactEmail }}</a></p>
+      <p><strong>Phone:</strong> <a href="tel:{{ .Site.Params.contactPhone }}">{{ .Site.Params.contactPhone }}</a></p>
+      <p><strong>Address:</strong> {{ .Site.Params.contactAddress }}</p>
+    </div>
+  </div>
+</section>
+
+{{ end }}

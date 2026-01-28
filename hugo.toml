@@ -1,0 +1,25 @@
+baseURL = 'https://eromlabs.com/'
+languageCode = 'en-gb'
+title = 'Erom Labs Ltd'
+disableKinds = ['taxonomy', 'term']
+
+[params]
+  description = 'Cloud infrastructure, automation systems, and integration services for logistics, energy, and professional services.'
+  heroSummary = 'We help businesses move faster with cloud infrastructure, workflow automation, and system integration — built for logistics, energy, and professional services.'
+  companyNumber = '16993036'
+  contactEmail = 'hello@eromlabs.com'
+  contactPhone = '+44 7944961772'
+  contactAddress = '37 Rowans, Welwyn Garden City, Hertfordshire, AL7 1NZ, United Kingdom'
+  about = 'Erom Labs is a UK-registered technology consultancy with operations in Lagos, Nigeria. We specialise in cloud infrastructure, process automation, and system integration for companies in logistics, energy, and professional services. Our team brings deep expertise in Google Cloud Platform, ERP integration, and building the automation that lets your operations scale.'
+
+  [[params.services]]
+    title = 'Cloud Infrastructure'
+    description = 'Architecture and deployment on Google Cloud Platform — Cloud Run, serverless functions, managed databases, and cost-optimised environments built for production workloads.'
+
+  [[params.services]]
+    title = 'Automation Systems'
+    description = 'Workflow automation, document processing, and API integration that eliminates manual work. From RFQ processing to ERP data flows, we build systems that run themselves.'
+
+  [[params.services]]
+    title = 'DevOps & Integration'
+    description = 'CI/CD pipelines, container orchestration, infrastructure as code, and system integration. We connect your tools and keep your deployments reliable.'
