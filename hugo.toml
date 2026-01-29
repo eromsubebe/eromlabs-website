@@ -9,7 +9,7 @@ disableKinds = ['taxonomy', 'term']
   companyNumber = '16993036'
   contactEmail = 'info@eromlabs.com'
   contactPhone = '+44 7944961772'
-  contactAddress = '37 Rowans, Welwyn Garden City, Hertfordshire, AL7 1NZ, United Kingdom'
+  contactAddress = 'Welwyn Garden City, Hertfordshire,United Kingdom'
   about = 'Erom Labs is a UK-registered technology consultancy with operations in Lagos, Nigeria. We specialise in cloud infrastructure, process automation, and system integration for companies in logistics, energy, and professional services. Our team brings deep expertise in Google Cloud Platform, ERP integration, and building the automation that lets your operations scale.'
 
   [[params.services]]
