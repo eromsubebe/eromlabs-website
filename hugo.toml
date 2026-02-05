@@ -5,12 +5,25 @@ disableKinds = ['taxonomy', 'term']
 
 [params]
   description = 'Cloud infrastructure, automation systems, and integration services for logistics, energy, and professional services.'
-  heroSummary = 'We help businesses move faster with cloud infrastructure, workflow automation, and system integration — built for logistics,financial services, energy, and professional services.'
+  heroSummary = 'We help businesses move faster with cloud infrastructure, workflow automation, and system integration — built for logistics, financial services, energy, and professional services.'
+  headline = 'Erom Labs: Automate Your Future. Cloud Solutions Redefined.'
+  ctaText = 'Explore Our Platform'
+  ctaLink = '#services'
   companyNumber = '16993036'
   contactEmail = 'info@eromlabs.com'
   contactPhone = '+44 7944961772'
   contactAddress = 'Welwyn Garden City, Hertfordshire, United Kingdom'
   about = 'Erom Labs is a UK-registered technology consultancy with operations in Lagos & Abuja, Nigeria. We specialise in cloud infrastructure, process automation, and system integration for companies in logistics, energy, financial services and professional services. Our team brings deep expertise in Google Cloud Platform, ERP integration, and building the automation that lets your operations scale.'
+
+  [[params.stats]]
+    label = 'Secure Connectivity'
+    value = '100%'
+  [[params.stats]]
+    label = 'Efficiency Boost'
+    value = '+40%'
+  [[params.stats]]
+    label = 'Cost Reduction'
+    value = '25%'
 
   [[params.services]]
     title = 'Cloud Infrastructure'

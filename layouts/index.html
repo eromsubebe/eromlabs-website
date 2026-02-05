@@ -1,16 +1,65 @@
 {{ define "main" }}
 
-<!-- Hero -->
+<!-- Hero Section -->
 <section class="hero">
-  <div class="container">
-    <img src="/images/eromlabs-logo.png" alt="Erom Labs Logo" class="logo">
-    <h1>Erom Labs</h1>
-    <p class="tagline">Cloud + Automation + Integration</p>
-    <p class="summary">{{ .Site.Params.heroSummary }}</p>
+  <!-- Background decorations -->
+  <div class="hero-bg">
+    <img src="/images/cloud-large.svg" alt="" class="cloud cloud-1" aria-hidden="true">
+    <img src="/images/cloud-small.svg" alt="" class="cloud cloud-2" aria-hidden="true">
+    <img src="/images/cloud-small.svg" alt="" class="cloud cloud-3" aria-hidden="true">
+    <img src="/images/sparkle.svg" alt="" class="sparkle sparkle-1" aria-hidden="true">
+    <img src="/images/sparkle.svg" alt="" class="sparkle sparkle-2" aria-hidden="true">
+    <img src="/images/sparkle.svg" alt="" class="sparkle sparkle-3" aria-hidden="true">
+  </div>
+
+  <!-- Hero Content -->
+  <div class="hero-content">
+    <h1>{{ .Site.Params.headline }}</h1>
+    <p class="subtitle">{{ .Site.Params.heroSummary }}</p>
+    <a href="{{ .Site.Params.ctaLink }}" class="cta-btn">{{ .Site.Params.ctaText }}</a>
+  </div>
+
+  <!-- Dashboard Mockup -->
+  <div class="dashboard-mockup">
+    <div class="dashboard-window">
+      <div class="window-header">
+        <span class="window-dot red"></span>
+        <span class="window-dot yellow"></span>
+        <span class="window-dot green"></span>
+      </div>
+      <div class="window-content">
+        <div class="dashboard-grid">
+          {{ range .Site.Params.stats }}
+          <div class="dashboard-card">
+            <div class="label">{{ .label }}</div>
+            <div class="value">{{ .value }}</div>
+          </div>
+          {{ end }}
+        </div>
+        <div class="dashboard-chart">
+          <div class="chart-bar"></div>
+          <div class="chart-bar"></div>
+          <div class="chart-bar"></div>
+          <div class="chart-bar"></div>
+          <div class="chart-bar"></div>
+          <div class="chart-bar"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Floating Stat Cards -->
+  <div class="stat-cards">
+    {{ range .Site.Params.stats }}
+    <div class="stat-card">
+      <div class="stat-value">{{ .value }}</div>
+      <div class="stat-label">{{ .label }}</div>
+    </div>
+    {{ end }}
   </div>
 </section>
 
-<!-- Services -->
+<!-- Services Section -->
 <section class="services" id="services">
   <div class="container">
     <h2>What We Do</h2>
@@ -25,18 +74,18 @@
   </div>
 </section>
 
-<!-- About -->
+<!-- About Section -->
 <section class="about" id="about">
   <div class="container">
-    <h2>About</h2>
+    <h2>About Us</h2>
     <p>{{ .Site.Params.about }}</p>
   </div>
 </section>
 
-<!-- Contact -->
+<!-- Contact Section -->
 <section class="contact" id="contact">
   <div class="container">
-    <h2>Contact</h2>
+    <h2>Get In Touch</h2>
     <div class="contact-details">
       <p><strong>Email:</strong> <a href="mailto:{{ .Site.Params.contactEmail }}">{{ .Site.Params.contactEmail }}</a></p>
       <p><strong>Phone:</strong> <a href="tel:{{ .Site.Params.contactPhone }}">{{ .Site.Params.contactPhone }}</a></p>
